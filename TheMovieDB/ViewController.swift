@@ -28,8 +28,16 @@ class ViewController: UIViewController {
                 do {
                     let feed = try decoder.decode(Feed.self, from: data!)
                     print("This is JSON result -->> \n\(feed)")
+                } catch DecodingError.keyNotFound(let key, let context) {
+                    fatalError("Failed to decode from URL due to missing key '\(key.stringValue)' not found – \(context.debugDescription)")
+                } catch DecodingError.typeMismatch(_, let context) {
+                    fatalError("Failed to decode from URL due to type mismatch – \(context.debugDescription)")
+                } catch DecodingError.valueNotFound(let type, let context) {
+                    fatalError("Failed to decode from URL due to missing \(type) value – \(context.debugDescription)")
+                } catch DecodingError.dataCorrupted(_) {
+                    fatalError("Failed to decode from URL because it appears to be invalid JSON")
                 } catch {
-                    debugPrint("Error JSON parsing!")
+                    fatalError("Failed to decode from URL: \(error.localizedDescription)")
                 }
             }
         }

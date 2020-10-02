@@ -28,5 +28,5 @@ struct Movie: Codable {
     var popularity: Double
     var voteCount: Int
     var video: Bool
-    var voteAvarage: Double
+    var voteAverage: Double
 }
