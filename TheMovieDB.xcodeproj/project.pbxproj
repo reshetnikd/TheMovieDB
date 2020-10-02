@@ -13,6 +13,7 @@
 		353439392527595700F2FAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353439372527595700F2FAEA /* Main.storyboard */; };
 		3534393B2527595800F2FAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3534393A2527595800F2FAEA /* Assets.xcassets */; };
 		3534393E2527595800F2FAEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3534393C2527595800F2FAEA /* LaunchScreen.storyboard */; };
+		3534394725275B3C00F2FAEA /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534394625275B3C00F2FAEA /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3534393A2527595800F2FAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3534393D2527595800F2FAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3534393F2527595800F2FAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3534394625275B3C00F2FAEA /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				353439312527595700F2FAEA /* AppDelegate.swift */,
 				353439332527595700F2FAEA /* SceneDelegate.swift */,
 				353439352527595700F2FAEA /* ViewController.swift */,
+				3534394625275B3C00F2FAEA /* Feed.swift */,
 				353439372527595700F2FAEA /* Main.storyboard */,
 				3534393A2527595800F2FAEA /* Assets.xcassets */,
 				3534393C2527595800F2FAEA /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				353439362527595700F2FAEA /* ViewController.swift in Sources */,
+				3534394725275B3C00F2FAEA /* Feed.swift in Sources */,
 				353439322527595700F2FAEA /* AppDelegate.swift in Sources */,
 				353439342527595700F2FAEA /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +291,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36JR7N2LBE;
 				INFOPLIST_FILE = TheMovieDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = reshetnikd.TheMovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,7 +311,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36JR7N2LBE;
 				INFOPLIST_FILE = TheMovieDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = reshetnikd.TheMovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
