@@ -7,11 +7,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UISlidingTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .white
+        navigationItem.title = "News"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(showSearchController))
+        navigationItem.rightBarButtonItem?.tintColor = .white
+        navigationController?.navigationBar.barTintColor = .black
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 28.0)]
+        navigationController?.navigationBar.barStyle = .black
+        
+        addItem(item: EmptyViewController(), title: "STORIES")
+        addItem(item: EmptyViewController(), title: "VIDEO")
+        addItem(item: EmptyViewController(), title: "FAVOURITES")
+        setStyle(style: .fixed)
+        setHeaderActiveColor(color: .white)
+        setHeaderInactiveColor(color: .lightText)
+        setHeaderBackgroundColor(color: .black)
+        build()
+        
         let apiKey = "f910e2224b142497cc05444043cc8aa4"
         let url = URL(string: "https://api.themoviedb.org/3/movie/top_rated?api_key=\(apiKey)&language=en-US&page=1")
         
@@ -44,6 +64,12 @@ class ViewController: UIViewController {
         }
 
         task.resume()
+    }
+    
+    @objc func showSearchController() {
+        let searchController = SearchViewController()
+        searchController.modalPresentationStyle = .overCurrentContext
+        present(searchController, animated: true, completion: nil)
     }
 
 

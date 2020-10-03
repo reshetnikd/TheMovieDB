@@ -168,20 +168,20 @@ class UISlidingTabViewController: UIViewController {
 
 }
 
-extension UISlidingTabViewController: UICollectionViewDelegate{
+extension UISlidingTabViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         setCurrentPosition(position: indexPath.row)
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        if scrollView == collectionPage{
+        if scrollView == collectionPage {
             let currentIndex = Int(self.collectionPage.contentOffset.x / collectionPage.frame.size.width)
             setCurrentPosition(position: currentIndex)
         }
     }
 }
 
-extension UISlidingTabViewController: UICollectionViewDataSource{
+extension UISlidingTabViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionHeader {
             return titles.count
@@ -221,7 +221,7 @@ extension UISlidingTabViewController: UICollectionViewDataSource{
     }
 }
 
-extension UISlidingTabViewController: UICollectionViewDelegateFlowLayout{
+extension UISlidingTabViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == collectionHeader {
             if tabStyle == .fixed {
