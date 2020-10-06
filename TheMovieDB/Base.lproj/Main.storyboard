@@ -20,10 +20,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Un3-0e-UaL"/>
+                    <connections>
+                        <segue destination="geR-7f-25u" kind="show" id="JPw-yS-Qmg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="69.642857142857139"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="uF2-Dd-rRI">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="geR-7f-25u" customClass="SearchViewController" customModule="TheMovieDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Id1-sp-Ejp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YaV-EG-n7Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bk5-f0-4Yh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rug-Zl-Jck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768" y="71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mF7-wK-9cg">

@@ -67,9 +67,15 @@ class ViewController: UISlidingTabViewController {
     }
     
     @objc func showSearchController() {
-        let searchController = SearchViewController()
-        searchController.modalPresentationStyle = .overCurrentContext
-        present(searchController, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if #available(iOS 13.0, *) {
+            let searchController = storyboard.instantiateViewController(identifier: "SearchViewController")
+            show(searchController, sender: self)
+        } else {
+            // Fallback on earlier versions
+            let searchController = SearchViewController()
+            show(searchController, sender: self)
+        }
     }
 
 

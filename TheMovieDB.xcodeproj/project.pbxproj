@@ -17,6 +17,9 @@
 		358B06EB25278D1200520280 /* UISlidingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B06EA25278D1200520280 /* UISlidingTabViewController.swift */; };
 		358B06EE25286EE400520280 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B06ED25286EE400520280 /* EmptyViewController.swift */; };
 		358B06F1252871FF00520280 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B06F0252871FF00520280 /* SearchViewController.swift */; };
+		358B06F4252B7E1300520280 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B06F3252B7E1300520280 /* Slide.swift */; };
+		358B06F7252B7E3900520280 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358B06F6252B7E3900520280 /* Slide.xib */; };
+		358B06FA252CCDC700520280 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B06F9252CCDC700520280 /* SlideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		358B06EA25278D1200520280 /* UISlidingTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISlidingTabViewController.swift; sourceTree = "<group>"; };
 		358B06ED25286EE400520280 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		358B06F0252871FF00520280 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		358B06F3252B7E1300520280 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		358B06F6252B7E3900520280 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		358B06F9252CCDC700520280 /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +73,14 @@
 				353439312527595700F2FAEA /* AppDelegate.swift */,
 				353439332527595700F2FAEA /* SceneDelegate.swift */,
 				353439352527595700F2FAEA /* ViewController.swift */,
+				358B06F9252CCDC700520280 /* SlideViewController.swift */,
 				358B06ED25286EE400520280 /* EmptyViewController.swift */,
 				358B06F0252871FF00520280 /* SearchViewController.swift */,
 				358B06EA25278D1200520280 /* UISlidingTabViewController.swift */,
 				3534394625275B3C00F2FAEA /* Feed.swift */,
 				353439372527595700F2FAEA /* Main.storyboard */,
+				358B06F3252B7E1300520280 /* Slide.swift */,
+				358B06F6252B7E3900520280 /* Slide.xib */,
 				3534393A2527595800F2FAEA /* Assets.xcassets */,
 				3534393C2527595800F2FAEA /* LaunchScreen.storyboard */,
 				3534393F2527595800F2FAEA /* Info.plist */,
@@ -139,6 +148,7 @@
 				3534393E2527595800F2FAEA /* LaunchScreen.storyboard in Resources */,
 				3534393B2527595800F2FAEA /* Assets.xcassets in Resources */,
 				353439392527595700F2FAEA /* Main.storyboard in Resources */,
+				358B06F7252B7E3900520280 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +164,10 @@
 				353439362527595700F2FAEA /* ViewController.swift in Sources */,
 				3534394725275B3C00F2FAEA /* Feed.swift in Sources */,
 				353439322527595700F2FAEA /* AppDelegate.swift in Sources */,
+				358B06FA252CCDC700520280 /* SlideViewController.swift in Sources */,
 				358B06EB25278D1200520280 /* UISlidingTabViewController.swift in Sources */,
 				353439342527595700F2FAEA /* SceneDelegate.swift in Sources */,
+				358B06F4252B7E1300520280 /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
